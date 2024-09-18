@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.container {
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    background-image: url('/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container .header {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    font-size: 30px;
+    color: rgb(9, 145, 38);
+    margin-bottom: 20px;
+}
+
+.container .header .logo {
+    font-size: 30px;
+    color: white;
+    font-weight: bolder;
+}
+
+.container .header .list ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.container .header .list ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container .header .list ul li a:hover {
+    color: #45a049;
+}
+
+.container .title h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    color: #45a049;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quiz-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#progress {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .container {
+        width: 95%;
+        padding: 10px;
+        height: 150vh;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .header .list ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .quiz-container {
+        width: 100%;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header .logo {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .container
+    {
+        width: 90%;
+    }
+    .quiz-container
+    {
+        width:80%;
+    }
+}
